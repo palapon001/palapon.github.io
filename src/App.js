@@ -16,6 +16,7 @@ import {
   FaCode,
   FaDatabase,
   FaTools,
+  FaBars,
 } from "react-icons/fa";
 import "./App.css";
 import {} from "react-icons/fa";
@@ -36,7 +37,7 @@ const Portfolio = () => {
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
           >
-            <span className="navbar-toggler-icon"></span>
+            <FaBars style={{ color: "white" }} />
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
@@ -77,14 +78,14 @@ const Portfolio = () => {
       </header>
 
       {/* skills Section */}
-      <section id="skills" className="my-5 p-5 bg-dark text-white">
+      <section id="skills" className="p-5 bg-dark text-white">
         <div className="text-center">
-          <h5 style={{ color: "orange"}}>What I Know</h5>
+          <h5 style={{ color: "orange" }}>What I Know</h5>
           <h1>Who I Am</h1>
         </div>
         <div className="row mt-4">
           <div className="col-md-4">
-            <div className="card">
+            <div className="card m-2">
               <div className="card-body">
                 <h5 className="card-title">
                   <FaCode style={{ color: "orange" }} /> Frontend
@@ -111,7 +112,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card">
+            <div className="card m-2">
               <div className="card-body">
                 <h5 className="card-title">
                   <FaDatabase style={{ color: "orange" }} /> Backend
@@ -131,7 +132,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card">
+            <div className="card m-2">
               <div className="card-body">
                 <h5 className="card-title">
                   <FaTools style={{ color: "orange" }} /> Tools & Others
@@ -155,11 +156,13 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <section id="projects" className="bg-light my-5 p-5 ">
+
+      {/* Projects Section */}
+      <section id="projects" className="bg-light  p-5 ">
         <h2 className="text-center mb-3">My Projects</h2>
         <div className="row">
           <div className="col-md-4">
-            <div className="card">
+            <div className="card m-2">
               <div className="card-body">
                 <h5 className="card-title">Project : sport-exercise</h5>
                 <span class="badge bg-light text-primary m-1">HTML</span>
@@ -178,7 +181,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card">
+            <div className="card m-2">
               <div className="card-body">
                 <h5 className="card-title">Project : kanommuangphet</h5>
                 <span class="badge bg-light text-primary m-1">HTML</span>
@@ -197,7 +200,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card">
+            <div className="card m-2">
               <div className="card-body">
                 <h5 className="card-title">
                   Project : Retail Management System
@@ -269,9 +272,9 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-light p-5 my-5">
+      <section id="contact" className="bg-light p-5 ">
         <div className="text-center">
-          <h5 style={{ color: "orange"}}>GET IN TOUCH</h5>
+          <h5 style={{ color: "orange" }}>GET IN TOUCH</h5>
           <h1>Contact</h1>
         </div>
         <div className="row mt-4">
